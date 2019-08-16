@@ -1,17 +1,21 @@
 # iLibrary Project
 
-This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+iLibrary is a project that users can help thier digital libraries. iLibrary has three shelves named 'Currently reading', 'Want to read' and 'Read'.
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
+* App has of two pages named the homepage and the search page.
+* The homepage shows 3 shelves with books and it's books 
+* Users can add a new book by searching on page that linked on "+" icon on the bottom-right corner on homepage 
 
-## TL;DR
+## Installation
 
 To get started developing right away:
 
+* download the zip file
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
+* go to http://localhost:3000 and :collision:
 
-## What You're Getting
+## Project Content
 ```bash
 ├── README.md - This file.
 ├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
@@ -20,15 +24,22 @@ To get started developing right away:
 │   ├── favicon.ico # React Icon, You may change if you wish.
 │   └── index.html # DO NOT MODIFY
 └── src
-    ├── App.css # Styles for your app. Feel free to customize this as you desire.
-    ├── App.js # This is the root of your app. Contains static HTML right now.
-    ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
-    ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
+    ├── components
+    │   ├── Book.js
+    │   ├── ErrorPage.js
+    │   ├── Library.js
+    │   ├── Search.js
+    │   └── Shelf.js
     ├── icons # Helpful images for your app. Use at your discretion.
     │   ├── add.svg
     │   ├── arrow-back.svg
     │   └── arrow-drop-down.svg
-    ├── index.css # Global styles. You probably won't need to change anything here.
+    ├── styles # Helpful images for your app. Use at your discretion.
+    │   ├── App.css # Styles for your app. Feel free to customize this as you desire.
+    │   └── index.css # Global styles. You probably won't need to change anything here.
+    ├── App.js # This is the root of your app. Contains static HTML right now.
+    ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
+    ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
     └── index.js # You should not need to modify this file. It is used for DOM rendering only.
 ```
 
@@ -85,7 +96,28 @@ The backend API uses a fixed set of cached search results and is limited to a pa
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
+### Resources and Documentation:
+
+- [Create-react-app Documentation](https://github.com/facebookincubator/create-react-app)
+- [React Router Documentation](http://knowbody.github.io/react-router-docs/)
+- [React Training/React Router](https://reacttraining.com/react-router/web/api/BrowserRouter)
+- [React API](https://facebook.github.io/react/docs/react-api.html)
+
+### Udacity Resources:
+
+- [Project starter template](https://github.com/udacity/reactnd-project-myreads-starter)
+- [Project Rubric](https://review.udacity.com/#!/rubrics/918/view)
+- [Udacity CSS Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/css.html)
+- [Udacity HTML Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/index.html)
+- [Udacity JavaScript Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)
+
+#### Search Terms
+
+'Android', 'Art', 'Artificial Intelligence', 'Astronomy', 'Austen', 'Baseball', 'Basketball', 'Bhagat', 'Biography', 'Brief', 'Business', 'Camus', 'Cervantes', 'Christie', 'Classics', 'Comics', 'Cook', 'Cricket', 'Cycling', 'Desai', 'Design', 'Development', 'Digital Marketing', 'Drama', 'Drawing', 'Dumas', 'Education', 'Everything', 'Fantasy', 'Film', 'Finance', 'First', 'Fitness', 'Football', 'Future', 'Games', 'Gandhi', 'History', 'History', 'Homer', 'Horror', 'Hugo', 'Ibsen', 'Journey', 'Kafka', 'King', 'Lahiri', 'Larsson', 'Learn', 'Literary Fiction', 'Make', 'Manage', 'Marquez', 'Money', 'Mystery', 'Negotiate', 'Painting', 'Philosophy', 'Photography', 'Poetry', 'Production', 'Program Javascript', 'Programming', 'React', 'Redux', 'River', 'Robotics', 'Rowling', 'Satire', 'Science Fiction', 'Shakespeare', 'Singh', 'Swimming', 'Tale', 'Thrun', 'Time', 'Tolstoy', 'Travel', 'Ultimate', 'Virtual Reality', 'Web Development', 'iOS'
+
 # Screenshots
 ![homepage](https://github.com/batuhanersozlu/i-library/blob/master/Screen%20Shot%202019-08-15%20at%2014.26.05.png)
 ![search homepage](https://github.com/batuhanersozlu/i-library/blob/master/Screen%20Shot%202019-08-15%20at%2014.26.15.png)
 ![search results](https://github.com/batuhanersozlu/i-library/blob/master/Screen%20Shot%202019-08-15%20at%2014.26.38.png)
+
+_This project is licensed under the terms of the MIT license._
